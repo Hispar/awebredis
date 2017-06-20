@@ -1,0 +1,36 @@
+<nav class="nav has-shadow">
+    <div class="container">
+        <div class="nav-left">
+            <a class="nav-item">
+                <img src="http://bulma.io/images/bulma-logo.png"
+                     alt="Bulma logo">
+            </a>
+            <a class="nav-item is-tab is-hidden-mobile {% if section=='info' %}is-active{% endif %}"
+               href="/">Info</a>
+            <a class="nav-item is-tab is-hidden-mobile {% if section=='keys' %}is-active{% endif %}"
+               href="/keys">Keys</a>
+            <a class="nav-item is-tab is-hidden-mobile {% if section=='sets' %}is-active{% endif %}"
+               href="/sets">Sets</a>
+        </div>
+        <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+        <div class="nav-right nav-menu">
+            <a class="nav-item is-tab is-hidden-tablet {% if section=='info' %}is-active{% endif %}"
+               href="/">Info</a>
+            <a class="nav-item is-tab is-hidden-tablet {% if section=='keys' %}is-active{% endif %}"
+               href="/keys">Keys</a>
+            <a class="nav-item is-tab is-hidden-tablet {% if section=='sets' %}is-active{% endif %}"
+               href="/sets">Sets</a>
+            <!--<a class="nav-item is-tab">-->
+            <!--<figure class="image is-16x16" style="margin-right: 8px;">-->
+            <!--<img src="http://bulma.io/images/jgthms.png">-->
+            <!--</figure>-->
+            <!--Profile-->
+            <!--</a>-->
+            <!--<a class="nav-item is-tab">Log out</a>-->
+        </div>
+    </div>
+</nav>

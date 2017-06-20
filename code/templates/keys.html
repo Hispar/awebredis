@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>awebredis</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css.map">
+</head>
+<body>
+{% with %}
+    {% set section = 'keys' %}
+    {% include 'nav.html' %}
+{% endwith %}
+<section class="section">
+    <div class="container is-fluid">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+            </tfoot>
+            <tbody>
+            {% for key in keys %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{keys[key]}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>
